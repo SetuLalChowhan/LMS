@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* globals.css */
+
+  .button-custom {
+    @apply w-[148px] h-[51px] absolute top-[24px]  py-[12px] lg:px-[28px] gap-[8px] rounded-[7px] text-secondary text-[17px]  bg-[#3687FC] hover:opacity-75 transition-all duration-300;
+  }
+  .button-custom1 {
+    @apply w-[148px] h-[51px]  rounded-[7px] text-secondary text-[17px]  bg-[#3687FC];
+  }
+  .button-custom2 {
+    @apply  px-4 py-4  lg:px-6 lg:py-4 gap-2.5 rounded-[4px] bg-[#3687FC] text-secondary hover:opacity-75 transition-all duration-300;
+  }
+  .button-custom3 {
+    @apply  px-4 py-4  lg:px-6 lg:py-4 gap-2.5 rounded-[4px] border-[1.5px]  outline outline-2 outline-[#3687FC] hover:opacity-75 transition-all duration-300;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+}
+
+/* swiperCustom.css */
+.swiper-button-next,
+.swiper-button-prev {
+  @apply font-bold left-0 top-1/2 transform -translate-y-1/2 
+         bg-white  rounded-full p-4; /* Add a border, make it rounded, and add padding */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  @apply font-bold; /* Apply color and boldness to the arrow icons */
+}
+
+/* Optional: Adjust positioning if needed */
+.swiper-button-next {
+  @apply right-4; /* Adjust the right distance */
+}
+
+.swiper-button-prev {
+  @apply left-4; /* Adjust the left distance */
+}

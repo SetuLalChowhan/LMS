@@ -1,0 +1,28 @@
+{
+  "name": "lms",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18",
+    "react-icons": "^5.3.0",
+    "react-redux": "^9.1.2",
+    "swiper": "^11.1.11",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "url-loader": "^4.1.1"
+  }
+}
