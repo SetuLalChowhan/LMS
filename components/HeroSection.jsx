@@ -67,7 +67,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Right side-Image Section */}
-      <div className=" hidden lg:inline-block lg:w-[648px] h-[502px]  ">
+      <div className=" hidden lg:inline-block lg:w-[648px] h-[502px] mt-8  ">
         <div className=" lg:w-[648px] h-[437px] lg:flex-center lg:flex-row flex-col  gap-3  rounded-bl-[4px] ">
           <div className=" md:flex-center">
             <Image

@@ -126,7 +126,7 @@ const page = ({ params }) => {
         </p>
       </div>
       <div className=" container lg:w-[1320px]  lg:mt-0 mt-24">
-        <div className="lg:w-[1320px] lg:h-[169px] flex flex-col gap-4  ">
+        <div className="lg:w-full lg:h-[169px] flex flex-col gap-4  ">
           <h1 className="text-[46px] font-[700] text-blue"> Basic Module</h1>
           <p className="text-[18px] font-[400] text-[#6F6F73]">
             Each module covers essential skills from user research to advanced
@@ -139,8 +139,8 @@ const page = ({ params }) => {
 
         </div>
       </div>
-      <div className=" -mt-11">
-      <Instructor title={"Our Expert Instructors For This Course"} para={"Each module covers essential skills from user research to advanced UI design, helping you build a professional portfolio and excel in your UX/UI career."} value={"lg:w-[872px] lg:h-[251px]"} value1={"lg:w-[700px]"} number={2} />
+      <div className=" ">
+      <Instructor title={"Our Expert Instructors For This Course"} para={"Each module covers essential skills from user research to advanced UI design, helping you build a professional portfolio and excel in your UX/UI career."} value={""} value1={"lg:w-[640px]"} number={2} />
       </div>
       <div>
       <Testimonials title={" Reviews from Students"} para={"Each module covers essential skills from user research to advanced UI design, helping you build a professional portfolio and excel in your UX/UI career."} />

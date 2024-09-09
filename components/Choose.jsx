@@ -5,7 +5,7 @@ import Head from "./Head";
 
 const Choose = () => {
   return (
-    <section className=" lg:container lg:w-[1320px] lg:h-[402px] mt-28">
+    <section className=" lg:container lg:w-[1320px] lg:h-[402px] mt-24">
       {/* //Head Section */}
       <div className=" lg:w-[700px] lg:h-[112px] lg:mx-auto ">
         <Head
@@ -16,7 +16,7 @@ const Choose = () => {
         />
       </div>
       {/* //Card Section */}
-      <div className=" lg:w-[1320px] lg:h-[250px] lg:grid lg:grid-cols-4 gap-6 flex flex-col justify-center items-center mt-4 md:grid md:grid-cols-2 md:place-items-center ">
+      <div className=" lg:w-[1320px] -ml-4 lg:h-[250px] lg:grid lg:grid-cols-4 gap-6 flex flex-col justify-center items-center mt-4 md:grid md:grid-cols-2 md:place-items-center ">
         {chooseUs.map((item, index) => {
           return (
             <div

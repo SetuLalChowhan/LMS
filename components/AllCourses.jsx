@@ -24,7 +24,7 @@ const AllCourses = () => {
     dispatch(getCourses("All Courses"));
   }, [dispatch]);
   return (
-    <div className=" mt-7">
+    <div className=" w-full mt-6">
       {/* Category Section */}
       <div className="lg:flex-center gap-7 grid grid-cols-3 ">
         {Cat.map((item, index) => {
@@ -47,7 +47,7 @@ const AllCourses = () => {
         })}
       </div>
       {/* All Courses */}
-      <div className="grid lg:grid-cols-4 mt-8 gap-10 mt place-items-center md:grid-cols-2">
+      <div className="grid lg:grid-cols-4 mt-8 gap-3 mt place-items-center md:grid-cols-2">
         {courses?.map((value, index) => {
           return index <= 7 ? (
             <Card

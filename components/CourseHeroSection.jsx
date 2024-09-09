@@ -11,7 +11,7 @@ import img3 from "../public/images/CoursesImage/img3.jpg";
 
 const CourseHeroSection = () => {
   return (
-    <section className="container flex lg:flex-row flex-col gap-28 lg:mt-36 mt-20">
+    <section className="container h-[440px] flex lg:flex-row flex-col gap-28 lg:mt-36 mt-20">
       {/* Left side */}
       <div className="  flex flex-col  ">
         
@@ -38,7 +38,7 @@ const CourseHeroSection = () => {
         </div>
       </div>
       {/* Right side-Image Section */}
-      <div className=" hidden lg:inline-block -mt-10   ">
+      <div className=" hidden lg:inline-block   ">
         <div className=" lg:w-[648px] h-[437px] lg:flex-center lg:flex-row flex-col  gap-3  rounded-bl-[4px] ">
           <div className="flex-col gap-3 hidden lg:flex">
             <Image

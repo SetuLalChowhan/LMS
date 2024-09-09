@@ -28,7 +28,7 @@ const Module = () => {
         {accordionData.map((item, index) => (
           <div key={index} className="border border-gray-200 rounded-md">
             <button
-              className="flex justify-between items-center w-full p-4 font-medium text-left text-black bg-white hover:bg-gray-200"
+              className="flex border-2  items-center w-full p-4 font-medium text-left text-black bg-white hover:bg-gray-200"
               onClick={() => toggleAccordion(index)}
             >
               {/* Box for Week */}

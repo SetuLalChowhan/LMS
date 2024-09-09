@@ -15,7 +15,7 @@ const BlogSection = () => {
           }
         />
       </div>
-      <div className="lg:w-[1320px] lg:h-[486px] grid lg:grid-cols-4 md:grid-cols-2 place-items-center gap-[24px] mt-14 ">
+      <div className="  lg:h-[486px] grid lg:grid-cols-4 md:grid-cols-2 place-items-center gap-2  mt-14 ">
         {Blogs.map((blog, index) => (
           <Card
             key={index}
@@ -29,7 +29,7 @@ const BlogSection = () => {
       </div>
       <div className="text-blue mt-14">
         <ButtonIcon
-          value={"button-custom3  mx-auto font-semibold text-[16px]"}
+          value={"button-custom3 w-[200px]  mx-auto font-semibold text-[16px]"}
           name={"See More "}
           icon={""}
         />

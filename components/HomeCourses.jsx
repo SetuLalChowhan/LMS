@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const HomeCourses = () => {
   return (
-    <section className=" lg:container lg:w-[1320px]  mt-28  ">
+    <section className=" lg:container lg:w-[1320px]  mt-24  ">
       {/* Head Seaction */}
       <div className=" w-full lg:h-[112px] lg:mx-auto ">
         <Head
@@ -17,7 +17,7 @@ const HomeCourses = () => {
         />
       </div>
       {/* Course Section */}
-      <div>
+      <div className=" w-full">
         <AllCourse />
       </div>
       {/* Button */}
