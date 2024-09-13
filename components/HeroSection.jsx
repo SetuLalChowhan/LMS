@@ -11,9 +11,9 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="container flex lg:flex-row flex-col gap-28 lg:mt-36 mt-20">
+    <section className="md:container    flex md:flex-row flex-col gap-28 lg:mt-36 mt-20">
       {/* Left side */}
-      <div className="lg:w-[536px] lg:h-[590px]  flex flex-col  ">
+      <div className="md:w-full md:h-full  flex flex-col  ">
         <div className="lg:text-[18px] font-[600] text-left text-blue">
           Learn with EduHub
         </div>
@@ -27,7 +27,7 @@ const HeroSection = () => {
             Welcome to EduHub, your gateway to expert-led courses. Learn at your
             own pace and unlock your potential with EduHub today.
           </p>
-          <div className="flex lg:flex-row flex-col items-center lg:items-start mt-10 gap-8">
+          <div className="flex md:flex-row flex-col items-center md:items-start mt-10 gap-8">
             <Link href={"/courses"}>
               <ButtonIcon
                 name={"Browse Courses"}
@@ -67,7 +67,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Right side-Image Section */}
-      <div className=" hidden lg:inline-block lg:w-[648px] h-[502px] mt-8  ">
+      <div className=" hidden md:inline-block lg:w-[648px] h-[502px] mt-8  ">
         <div className=" lg:w-[648px] h-[437px] lg:flex-center lg:flex-row flex-col  gap-3  rounded-bl-[4px] ">
           <div className=" md:flex-center">
             <Image
@@ -79,7 +79,7 @@ const HeroSection = () => {
               priority 
             />
           </div>
-          <div className="flex-col gap-3 hidden lg:flex">
+          <div className="flex-col gap-3 hidden  lg:flex">
             <Image
               className="ml-7 lg:ml-0 lg:w-auto lg:h-auto"
               src={img3}

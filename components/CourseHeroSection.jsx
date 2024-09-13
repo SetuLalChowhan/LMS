@@ -11,12 +11,12 @@ import img3 from "../public/images/CoursesImage/img3.jpg";
 
 const CourseHeroSection = () => {
   return (
-    <section className="container h-[440px] flex lg:flex-row flex-col gap-28 lg:mt-36 mt-20">
+    <section className="container   h-[440px] flex md:flex-row flex-col gap-28    md:mt-36 mt-20">
       {/* Left side */}
-      <div className="  flex flex-col  ">
+      <div className="md:w-[536px] md:h-[590px]  flex flex-col     ">
         
-        <div className=" ">
-          <div className="lg:text-[57px] text-[40px] font-[700]">
+        <div className="  flex flex-col   ">
+          <div className="md:text-[57px] text-[40px] font-[700]">
             Explore <span className="text-blue">Our Courses And Start</span>
             <span className="border-b-2 border-[#FFCC33]  "> Learning</span>
             
@@ -24,7 +24,7 @@ const CourseHeroSection = () => {
           <p className=" text-justify lg:text-[17px] font-[-200] leading-8 text-[#6F6F73] mt-3">
           Explore our comprehensive catalog of courses designed to help you achieve your personal and professional goals. We have the perfect course for you. Dive in and start learning today!
           </p>
-          <div className="flex lg:flex-row flex-col items-center lg:items-start mt-10 gap-8">
+          <div className="flex lg:flex-row flex-col items-center md:items-start mt-10 gap-8">
             <div>
               <ButtonIcon
                 name={"Explore now"}
@@ -38,9 +38,9 @@ const CourseHeroSection = () => {
         </div>
       </div>
       {/* Right side-Image Section */}
-      <div className=" hidden lg:inline-block   ">
+      <div className=" hidden md:inline-block lg:w-[648px] h-[502px]  ">
         <div className=" lg:w-[648px] h-[437px] lg:flex-center lg:flex-row flex-col  gap-3  rounded-bl-[4px] ">
-          <div className="flex-col gap-3 hidden lg:flex">
+          <div className="flex-col gap-3  hidden  lg:flex ">
             <Image
               className=" rounded-tl-[96.5px] ml-7 lg:ml-0 "
               src={img1}
@@ -56,9 +56,9 @@ const CourseHeroSection = () => {
               alt="image"
             />
           </div>
-          <div className=" flex-center">
+          <div className=" flex-center ">
             <Image
-              className="   lg:rounded-br-[156px] lg:ml-0 "
+              className="  lg:rounded-br-[156px] lg:ml-0 "
               src={img3}
               alt="image"
               width={200}

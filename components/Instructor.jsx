@@ -6,7 +6,7 @@ import InstructorCards from "./InstructorCards";
 const Instructor = ({title,para,value,value1 ,number}) => {
   console.log(number)
   return (
-    <section className=" lg:w-full lg:h-[514px] mt-24 inline-block ">
+    <section className=" container lg:w-full lg:h-[514px] mt-24  ">
       {/* //Head Section */}
       <div>
         <Head
