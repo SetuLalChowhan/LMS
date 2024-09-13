@@ -16,7 +16,7 @@ const Seminer = () => {
           {" "}
           Join Our Free live Seminar
         </h1>
-        <p className="lg:w-[535px] lg:h-[120px] text-[22px] font-[400] text-[#6F6F73] text-justify">
+        <p className="lg:w-[535px] lg:h-[120px] text-[17px] font-[400] text-[#6F6F73] text-justify">
           Don't miss our free seminar! Discover the benefits of lifelong
           learning, explore popular courses, and connect with industry experts
           and fellow learners.
@@ -25,8 +25,8 @@ const Seminer = () => {
           <Link href={"/"}>
             {" "}
             <ButtonIcon
-              name={"Reserve"}
-              value={"button-custom2 w-[170px]"}
+              name={"Reserve Now"}
+              value={"button-custom2 w-[200px]"}
               icon={<MdArrowForward size={30} />}
             />{" "}
           </Link>

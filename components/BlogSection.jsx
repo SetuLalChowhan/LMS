@@ -27,9 +27,9 @@ const BlogSection = () => {
           />
         ))}
       </div>
-      <div className="text-blue mt-14">
+      <div className="text-blue mt-14 ">
         <ButtonIcon
-          value={"button-custom3 w-[200px]  mx-auto font-semibold text-[16px]"}
+          value={"button-custom3 w-[200px]   mx-auto font-semibold text-[16px]"}
           name={"See More "}
           icon={""}
         />

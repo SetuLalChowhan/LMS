@@ -10,8 +10,8 @@ const ReviewCards = () => {
   //Review Card 
   const cards = reviews.map((item, index) => (
     <SwiperSlide key={index}>
-      <div className="lg:w-[424px] lg:h-[280px] h-[320px] bg-[#FFFFFF] inline-block">
-        <div className="flex justify-end mr-3 mt-3">
+      <div className="lg:w-[424px] lg:h-[280px] h-[320px] bg-[#FFFFFF] inline-block px-9">
+        <div className="flex justify-end ">
           <Image
             src={item.image}
             width={60}
@@ -21,7 +21,7 @@ const ReviewCards = () => {
           />
         </div>
         <svg
-          className="w-6 ml-8 text-blue dark:text-gray-600"
+          className="w-6  text-blue dark:text-gray-600"
           viewBox="0 0 24 27"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -31,10 +31,10 @@ const ReviewCards = () => {
             fill="currentColor"
           />
         </svg>
-        <div className="lg:h-[96px] text-[16px] font-[400] text-justify px-8">
+        <div className="lg:h-[96px] text-[16px] font-[400] text-justify ">
           {item.review}
         </div>
-        <div className="lg:w-[222px] mt-8 px-8">
+        <div className="lg:w-[222px] mt-8 ">
           <p className="text-[14px] font-[500]">{item.name}</p>
           <p className="text-[11px] font-[400]">{item.department}</p>
         </div>

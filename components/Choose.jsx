@@ -21,7 +21,7 @@ const Choose = () => {
           return (
             <div
               key={index}
-              className="flex flex-col justify-center items-center w-[312px] h-[250px] bg-[#D9E8FF] px-3 rounded-2xl "
+              className="flex flex-col justify-center items-center w-[312px] h-[250px] bg-[#D9E8FF] px-2 rounded-2xl "
             >
               <Image src={item.image} width={60} height={60} alt="logo" />
               <p className="text-[20px] font-[700]">{item.title}</p>

@@ -16,7 +16,7 @@ const CourseCard = ({ value }) => {
   const cards = courseCategory.map((item, index) => (
     <SwiperSlide key={index}>
       <div
-        className={`w-[312px] h-[430px]  border border-gray-300   rounded-md flex flex-col gap-2 items-start `}
+        className={`w-[312px] h-[430px]  border border-gray-300   rounded-md flex flex-col gap-2 items-start px-4 py-4 `}
       >
         <Image
           className="w-[312px] h-[224px] object-cover"
@@ -28,8 +28,8 @@ const CourseCard = ({ value }) => {
         />
 
         <div className=" h-[100px]">
-          <h1 className="text-[17px] font-[700]  ml-3">{item.title}</h1>
-          <p className="text-[16px] font-[400] text-[#6F6F73] mt-1 text-justify   px-3 ">
+          <h1 className="text-[17px] font-[700]  ">{item.title}</h1>
+          <p className="text-[16px] font-[400] text-[#6F6F73] mt-1 text-justify   ">
             {item.details}
           </p>
         </div>
@@ -38,7 +38,7 @@ const CourseCard = ({ value }) => {
             name="See Details"
             icon={<FaLongArrowAltRight />}
             value={
-              "text-blue mt-7 ml-3 x-4 flex-center gap-2 font-semibold text-[15px]"
+              "  mt-3  text-[15px] text-[15px] border-2 bg-blue text-white rounded-lg px-2 hover:opacity-75 duration-200 transition-all"
             }
           />
         </Link>

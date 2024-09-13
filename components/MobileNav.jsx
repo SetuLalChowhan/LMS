@@ -2,11 +2,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Button, Button2, Login } from "./Button";
+import { setNav } from "@/redux/feature/lms";
 
 const MobileNav = () => {
   const { nav } = useSelector((state) => state.lms);
+  const dispatch =useDispatch()
   const links = [
     {
       name: "Home",
@@ -33,7 +35,9 @@ const MobileNav = () => {
       <div className="flex flex-col justify-center items-center gap-6 text-[18px]">
         {links.map((link, index) => {
           return (
-            <Link
+            <Link  onClick={() => {
+              dispatch(setNav(!nav));
+            }}
               key={index}
               href={link.path}
               className={
