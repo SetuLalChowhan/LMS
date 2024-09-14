@@ -47,7 +47,7 @@ const AllCourses = () => {
         })}
       </div>
       {/* All Courses */}
-      <div className="grid lg:grid-cols-4 mt-8 gap-3 mt place-items-center md:grid-cols-2">
+      <div className="grid lg:grid-cols-4 mt-8 gap-3 mt place-items-center  md:grid-cols-2">
         {courses?.map((value, index) => {
           return index <= 7 ? (
             <Card

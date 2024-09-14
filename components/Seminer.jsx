@@ -11,8 +11,8 @@ const Seminer = () => {
   return (
     <section className="container lg:w-[1320px] lg:h-[400px] flex lg:flex-row flex-col gap-20 mt-24">
       {/* Left side */}
-      <div className=" lg:w-[535px] lg:h-[352px] flex flex-col gap-8">
-        <h1 className="lg:w-[535px] lg:h-[138px] font-[700] text-[46px] text-blue">
+      <div className=" lg:w-[535px] lg:h-[352px] flex flex-col  gap-8">
+        <h1 className="lg:w-[535px] lg:h-[138px] font-[700] text-[46px] mx-auto text-blue">
           {" "}
           Join Our Free live Seminar
         </h1>
@@ -21,7 +21,7 @@ const Seminer = () => {
           learning, explore popular courses, and connect with industry experts
           and fellow learners.
         </p>
-        <div className=" ">
+        <div className="mx-auto lg:mx-0">
           <Link href={"/"}>
             {" "}
             <ButtonIcon
@@ -33,7 +33,7 @@ const Seminer = () => {
         </div>
       </div>
       {/* Right Side */}
-      <div className=" hidden w-[647px] h-[359px] mt-6 lg:flex md:flex gap-5 ">
+      <div className=" hidden w-[647px] h-[359px] lg:mt-6 lg:flex md:flex gap-5 mx-auto ">
         <div className=" h=[400px]">
           <Image
             src={img10}

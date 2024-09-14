@@ -31,7 +31,7 @@ const Slide = ({ cards,tailwindValue ,num}) => {
         },
         800: {
           slidesPerView: 2,
-          spaceBetween: 20,
+          spaceBetween: 40,
         },
         1400: {
           slidesPerView: num,

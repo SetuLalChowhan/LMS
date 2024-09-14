@@ -4,7 +4,7 @@ import CourseSlideSection from './CourseSlideSection'
 
 const CourseSection = () => {
   return (
-    <section className=' container lg:w-[1320px] mt-24'>
+    <section className=' container lg:w-[1320px] mt-24 '>
 
    
      <CourseSlideSection catergory={"Design"}/>

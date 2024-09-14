@@ -16,7 +16,7 @@ const CourseCard = ({ value }) => {
   const cards = courseCategory.map((item, index) => (
     <SwiperSlide key={index}>
       <div
-        className={`w-[312px] h-[430px]  border border-gray-300   rounded-md flex flex-col gap-2 items-start px-4 py-4 `}
+        className={`w-[312px] h-[430px]  border border-gray-300 shadow-2xl  rounded-md flex flex-col gap-2 items-start px-4 py-4 `}
       >
         <Image
           className="w-[312px] h-[224px] object-cover"
