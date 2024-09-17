@@ -26,19 +26,19 @@
 .swiper-button-next,
 .swiper-button-prev {
   @apply font-bold left-0 top-1/2 transform -translate-y-1/2 
-         bg-white  rounded-full p-4; /* Add a border, make it rounded, and add padding */
+         bg-white rounded-full p-4 shadow-lg; /* Add border, padding, and shadow */
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  @apply font-bold; /* Apply color and boldness to the arrow icons */
+  @apply text-black; /* Customize the color of the arrow icons */
 }
 
-/* Optional: Adjust positioning if needed */
+/* Adjust positioning if needed */
 .swiper-button-next {
-  @apply right-4; /* Adjust the right distance */
+  @apply right-4; /* Positioning the next button */
 }
 
 .swiper-button-prev {
-  @apply left-4; /* Adjust the left distance */
+  @apply left-4; /* Positioning the previous button */
 }

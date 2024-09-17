@@ -1,30 +1,29 @@
 import React from "react";
-import { Button, ButtonIcon } from "./Button";
-import { IoBookOutline } from "react-icons/io5";
+import { ButtonIcon } from "./Button";
+
 import { MdArrowForward } from "react-icons/md";
-import { IoCheckmarkOutline } from "react-icons/io5";
+
 import Image from "next/image";
 import img1 from "../public/images/CoursesImage/img1.jpg";
 import img2 from "../public/images/CoursesImage/img2.jpg";
 import img3 from "../public/images/CoursesImage/img3.jpg";
 
-
 const CourseHeroSection = () => {
   return (
     <section className="container   h-[440px] flex md:flex-row flex-col gap-28    md:mt-36 mt-20">
       {/* Left side */}
-      <div className="md:w-[536px] md:h-[590px]  flex flex-col     ">
-        
-        <div className="  flex flex-col   ">
+      <div className="flex flex-col">
+        <div className="flex flex-col">
           <div className="md:text-[57px] text-[40px] font-[700]">
             Explore <span className="text-blue">Our Courses And Start</span>
-            <span className="border-b-2 border-[#FFCC33]  "> Learning</span>
-            
+            <span className="border-b-2 border-[#FFCC33]"> Learning</span>
           </div>
           <p className=" text-justify lg:text-[17px] font-[-200] leading-8 text-[#6F6F73] mt-3">
-          Explore our comprehensive catalog of courses designed to help you achieve your personal and professional goals. We have the perfect course for you. Dive in and start learning today!
+            Explore our comprehensive catalog of courses designed to help you
+            achieve your personal and professional goals. We have the perfect
+            course for you. Dive in and start learning today!
           </p>
-          <div className="flex lg:flex-row flex-col items-center md:items-start mt-10 gap-8">
+          <div className="flex lg:flex-row sm:flex-col flex-col items-center md:items-start mt-10 gap-8">
             <div>
               <ButtonIcon
                 name={"Explore now"}
@@ -32,24 +31,22 @@ const CourseHeroSection = () => {
                 value={"button-custom2"}
               />
             </div>
-          
           </div>
-         
         </div>
       </div>
       {/* Right side-Image Section */}
-      <div className=" hidden md:inline-block lg:w-[648px] h-[502px]  ">
-        <div className=" lg:w-[648px] h-[437px] lg:flex-center lg:flex-row flex-col  gap-3  rounded-bl-[4px] ">
-          <div className="flex-col gap-3  hidden  lg:flex ">
+      <div className=" hidden md:inline-block lg:w-[648px] ">
+        <div className=" lg:w-[648px] h-[437px] lg:flex-center lg:flex-row flex-col  gap-3  rounded-bl-[4px]">
+          <div className="flex-col gap-3  hidden  lg:flex">
             <Image
-              className=" rounded-tl-[96.5px] ml-7 lg:ml-0 "
+              className=" rounded-tl-[96.5px] ml-7 lg:ml-0"
               src={img1}
               width={312}
               height={148}
               alt="image"
             />
             <Image
-              className="   ml-7 lg:ml-0  "
+              className="ml-7 lg:ml-0"
               src={img2}
               width={312}
               height={40}

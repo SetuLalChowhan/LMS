@@ -5,18 +5,19 @@ import { SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { reviews } from "@/utilities/file";
 import Slide from "./Slide";
+import SwiperNavButton from "./SwiperNavButton";
 
 const ReviewCards = () => {
-  //Review Card 
+  //Review Card
   const cards = reviews.map((item, index) => (
     <SwiperSlide key={index}>
-      <div className="lg:w-[424px] lg:h-[280px] h-[320px] bg-[#FFFFFF] inline-block px-9">
-        <div className="flex justify-end ">
+      <div className="lg:w-[424px] lg:h-[280px] h-[320px] bg-[#FFFFFF] inline-block px-9 ">
+        <div className="flex justify-end -mr-7 mt-1 ">
           <Image
             src={item.image}
             width={60}
             height={60}
-            className="rounded-full"
+            className="rounded-full z-50"
             alt={item.name}
           />
         </div>
@@ -42,7 +43,7 @@ const ReviewCards = () => {
     </SwiperSlide>
   ));
 
-  return <Slide cards={cards} num={2} />;
+  return <Slide cards={cards} num={2} custom_arrow={<SwiperNavButton />} />;
 };
 
 export default ReviewCards;

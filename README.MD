@@ -21,7 +21,7 @@ TBA
 - **Clone the Repo**: Clone the repository directly to your local machine.
 
 ```
-git clone https://github.com/TheQuilCraft/HRM-Frontend.git
+git clone https://github.com/TheQuilCraft/Learning-Management-System.git
 ```
 
 2. **Create a New Branch**

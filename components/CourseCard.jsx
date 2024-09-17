@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ButtonIcon } from "./Button";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import SwiperNavButton from "./SwiperNavButton";
 
 const CourseCard = ({ value }) => {
   const courseCategory = courses.filter(
@@ -38,7 +39,7 @@ const CourseCard = ({ value }) => {
             name="See Details"
             icon={<FaLongArrowAltRight />}
             value={
-              "  mt-3  text-[15px] text-[15px] border-2 bg-blue text-white rounded-lg px-2 hover:opacity-75 duration-200 transition-all"
+              "  mt-3  text-[15px] text-[15px] border-2 bg-blue text-white rounded-md px-2 py-2 hover:opacity-75 duration-200 transition-all"
             }
           />
         </Link>
@@ -46,7 +47,13 @@ const CourseCard = ({ value }) => {
     </SwiperSlide>
   ));
 
-  return <Slide cards={cards} num={4} />;
+  return (
+    <Slide
+      cards={cards}
+      num={4}
+      custom_arrow={courseCategory.length < 5 ? "" : <SwiperNavButton />}
+    />
+  );
 };
 
 export default CourseCard;

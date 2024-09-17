@@ -3,7 +3,6 @@
 import { getCourses } from "@/redux/feature/lms";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Link from "next/link";
 import Card from "./Card";
 
 const AllCourses = () => {
@@ -47,7 +46,7 @@ const AllCourses = () => {
         })}
       </div>
       {/* All Courses */}
-      <div className="grid lg:grid-cols-4 mt-8 gap-3 mt place-items-center  md:grid-cols-2">
+      <div className="grid lg:grid-cols-4 mt-8 gap-3 place-items-center  md:grid-cols-2">
         {courses?.map((value, index) => {
           return index <= 7 ? (
             <Card

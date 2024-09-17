@@ -4,6 +4,7 @@ import { instructors } from "@/utilities/file";
 import Slide from "./Slide";
 import { SwiperSlide } from "swiper/react";
 import Image from "next/image";
+import SwiperNavButton from "./SwiperNavButton";
 
 const InstructorCards = ({ num }) => {
   //InstructorCards
@@ -32,7 +33,7 @@ const InstructorCards = ({ num }) => {
   
   ));
 
-  return <Slide cards={cards} num={num} />;
+  return <Slide cards={cards} num={num} custom_arrow={<SwiperNavButton/>} />;
 };
 
 export default InstructorCards;

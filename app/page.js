@@ -1,6 +1,5 @@
 import BlogSection from "@/components/BlogSection";
 import Choose from "@/components/Choose";
-import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import HomeCourses from "@/components/HomeCourses";
 import Instructor from "@/components/Instructor";

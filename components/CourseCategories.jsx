@@ -15,12 +15,12 @@ const CourseCategories = () => {
           }
         />
       </div>
-      <div className=" md:grid flex flex-wrap justify-center items-center lg:grid-cols-4 md:grid-cols-3 md:place-items-center gap-4 mt-3">
+      <div className=" md:grid flex flex-wrap justify-center items-center lg:grid-cols-4 md:grid-cols-3 md:place-items-center gap-4 mt-3  ">
         {categories.map((item, index) => (
           <Link
             href={"#"}
             key={index}
-            className=" shadow-inner md:w-[312px] md:h-[276px] flex flex-col justify-center items-center gap-3 bg-[#FFFFFF] hover:scale-105 duration-200 transition-all"
+            className="shadow-xl md:w-[312px] md:h-[276px] flex flex-col justify-center items-center gap-3 bg-[#FFFFFF] hover:scale-105 duration-200 transition-all rounded-lg"
           >
             <div>
               <Image
