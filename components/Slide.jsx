@@ -6,9 +6,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import SwiperNavButton from "./SwiperNavButton";
 
-const Slide = ({ cards,tailwindValue ,num,custom_arrow}) => {
+
+const Slide = ({ cards,tailwindValue ,num,custom_arrow,}) => {
 
   return (
     <Swiper
@@ -30,7 +30,7 @@ const Slide = ({ cards,tailwindValue ,num,custom_arrow}) => {
           slidesPerView: 1,
           spaceBetween: 20,
         },
-        800: {
+        750: {
           slidesPerView: 2,
           spaceBetween: 40,
         },

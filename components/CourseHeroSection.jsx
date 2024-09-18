@@ -10,11 +10,11 @@ import img3 from "../public/images/CoursesImage/img3.jpg";
 
 const CourseHeroSection = () => {
   return (
-    <section className="container   h-[440px] flex md:flex-row flex-col gap-28    md:mt-36 mt-20">
+    <section className="container   h-[440px] flex sm:flex-row flex-col lg:gap-28 md:gap-16    md:mt-36 mt-20">
       {/* Left side */}
-      <div className="flex flex-col">
+      <div className="flex flex-col flex-1">
         <div className="flex flex-col">
-          <div className="md:text-[57px] text-[40px] font-[700]">
+          <div className="lg:text-[57px] text-[40px] font-[700]">
             Explore <span className="text-blue">Our Courses And Start</span>
             <span className="border-b-2 border-[#FFCC33]"> Learning</span>
           </div>
@@ -35,7 +35,7 @@ const CourseHeroSection = () => {
         </div>
       </div>
       {/* Right side-Image Section */}
-      <div className=" hidden md:inline-block lg:w-[648px] ">
+      <div className=" hidden md:inline-block lg:w-[648px] flex-1 ">
         <div className=" lg:w-[648px] h-[437px] lg:flex-center lg:flex-row flex-col  gap-3  rounded-bl-[4px]">
           <div className="flex-col gap-3  hidden  lg:flex">
             <Image

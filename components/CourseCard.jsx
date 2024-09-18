@@ -17,7 +17,7 @@ const CourseCard = ({ value }) => {
   const cards = courseCategory.map((item, index) => (
     <SwiperSlide key={index}>
       <div
-        className={`w-[312px] h-[430px]  border border-gray-300 shadow-2xl  rounded-md flex flex-col gap-2 items-start px-4 py-4 `}
+        className={`w-[312px] h-[430px]  border border-gray-300 shadow-2xl  rounded-md flex flex-col gap-2 items-start px-3 py-4 `}
       >
         <Image
           className="w-[312px] h-[224px] object-cover"
@@ -51,7 +51,10 @@ const CourseCard = ({ value }) => {
     <Slide
       cards={cards}
       num={4}
-      custom_arrow={courseCategory.length < 5 ? "" : <SwiperNavButton />}
+     
+      custom_arrow={ courseCategory.length>=5?<SwiperNavButton/>:(<div className={ courseCategory.length===1 ?"hidden":"lg:hidden flex justify-center items-center"}>
+        <SwiperNavButton/>
+      </div>)}
     />
   );
 };

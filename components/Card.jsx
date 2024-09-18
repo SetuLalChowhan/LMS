@@ -8,7 +8,7 @@ const Card = ({ item, height, category, date, type }) => {
   return (
     // Card Blog and Course card where blog card has extra date category and blog,course card have diffrent height
     <div
-      className={`w-[312px] ${height}  border border-gray-300 shadow-2xl px-4 py-4 rounded-md flex flex-col gap-2 items-start `}
+      className={`w-[312px] ${height}  border border-gray-300 shadow-2xl px-3 py-4 rounded-md flex flex-col gap-2 items-start `}
     >
       <Image
         src={item.image}
@@ -22,7 +22,7 @@ const Card = ({ item, height, category, date, type }) => {
       <p className="text-[12px font-[400] ">{date}</p>
       
         <h1 className="text-[17px] font-[700] ">{item.title}</h1>
-        <p className="text-[16px] font-[400] text-[#6F6F73] mt-1 text-justify ">
+        <p className="text-[16px] font-[400] text-[#6F6F73] mt-1 text-justify  ">
           {item.details}
         </p>
     

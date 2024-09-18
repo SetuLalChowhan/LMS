@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const CourseCategories = () => {
   return (
-    <section className=" container mt-24">
+    <section className=" container  lg:mt-24">
       <div>
         <Head
           header={"Categories"}

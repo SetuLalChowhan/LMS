@@ -12,7 +12,7 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <section className="py-12">
-      <div className="md:container flex md:flex-row flex-col gap-28 lg:mt-12 mt-12">
+      <div className="container flex sm:flex-row flex-col gap-28 lg:mt-12 mt-12">
         {/* Left side */}
         <div className="md:w-full md:h-full  flex flex-col">
           <div className="lg:text-[18px] font-[600] text-left text-blue">
@@ -45,7 +45,7 @@ const HeroSection = () => {
                 />
               </div>
             </div>
-            <div className="gap-3 mt-10 flex lg:flex-row   lg:items-start">
+            <div className="gap-3 mt-10 flex lg:flex-row  items-start">
               <div className=" flex-center gap-2 ">
                 <div className="border-2 lg:w-6 lg:h-6  bg-[#3687FC] rounded-full flex-center">
                   <IoCheckmarkOutline color="white" />
