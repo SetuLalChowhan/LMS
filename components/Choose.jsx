@@ -5,7 +5,7 @@ import Head from "./Head";
 
 const Choose = () => {
   return (
-    <section className=" lg:container lg:w-[1320px] lg:h-[402px] mt-24">
+    <section className=" lg:container lg:w-[1320px] lg:h-[402px] lg:mt-24">
       {/* //Head Section */}
       <div className=" lg:w-[700px] lg:h-[112px] lg:mx-auto ">
         <Head

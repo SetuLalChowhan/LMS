@@ -65,25 +65,25 @@ const Footer = () => {
           <h1 className="font-[700] text-[27px]">Informations</h1>
           <div className=" flex flex-col gap-6 mt-4">
             <Link
-              className="text-[16px] font-[400]  text-[#FFFFFF] hover:opacity-75 transition-all duration-200"
+              className="text-[16px] font-[400]  text-[#FFFFFF] hover:opacity-75  transition-all duration-200"
               href={"#"}
             >
               About us{" "}
             </Link>
             <Link
-              className="text-[16px] font-[400] text-[#FFFFFF] hover:opacity-75 transition-all duration-200"
+              className="text-[16px] font-[400] text-[#FFFFFF] hover:opacity-75  transition-all duration-200"
               href={"#"}
             >
               Blogs
             </Link>
             <Link
-              className="text-[16px] font-[400] text-[#FFFFFF] hover:opacity-75 transition-all duration-200"
+              className="text-[16px] font-[400] text-[#FFFFFF] hover:opacity-75 te transition-all duration-200"
               href={"#"}
             >
               Testimonials
             </Link>
             <Link
-              className="text-[16px] font-[400] text-[#FFFFFF] hover:opacity-75 transition-all duration-200"
+              className="text-[16px] font-[400] text-[#FFFFFF] hover:opacity-75  transition-all duration-200"
               href={"#"}
             >
               Seminers
