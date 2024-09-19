@@ -18,7 +18,7 @@ const CourseSlideSection = ({catergory,}) => {
       <div className=" mt-7">
       <Slide 
         cards={<CourseCard value={catergory} />}
-        tailwindValue={"md:w-[600px] lg:w-[1300px] w-[300px] rounded-md"}
+        tailwindValue={"md:w-[700px] lg:w-[1300px] w-[320px] rounded-md"}
       />
       </div>
     </div>

@@ -7,46 +7,44 @@ import React from "react";
 import Image from "next/image";
 
 const Header = () => {
-  console.log(30);
   return (
-    <header className=" shadow-custom  w-full lg:h-[100px]  flex lg:flex-row  flex-col  lg:justify-center sticky top-0 z-50  bg-white   ">
-      <div className="container flex justify-between items-center ">
-        <div className="w-[143px] font-semibold text-blue">
-          {/* Logo */}
+    <header className=" container shadow-custom w-full flex flex-col lg:flex-row lg:h-[100px]  sticky top-0 z-50 bg-white">
+      <div className=" flex justify-between   items-center w-full">
+        {/* Logo */}
+        <div className="w-[143px] font-semibold text-blue  ">
           <Link href="/">
-            <Image src="/logo.png"
-             alt="logo" 
-             width="150"
-            height="100" 
+            <Image
+              src="/logo.png"
+              alt="logo"
+              width="150"
+              height="100"
             />
-            {/* <h1 className="text-[23px] font-semibold">EduHub</h1> */}
           </Link>
         </div>
+
         {/* Large Screen Nav */}
-        <div>
+        <div className="hidden md:flex ">
           <Nav />
         </div>
-        {/* Login and Enroll Button */}
-        <div className=" hidden lg:flex gap-10 lg:mr-28">
-          <Link href={"#"}>
-            {" "}
-            <Button2
-              value=" px-0 gap-[10px] text-[21px] text-blue  "
-              name={"Login"}
-            />
-          </Link>
 
+        {/* Login and Enroll Buttons */}
+        <div className="hidden md:flex gap-4 lg:gap-10 lg:mr-36 ">
           <Link href={"#"}>
-            <Button value="button-custom " name={"Enroll Now"} />
+            <Button2 value="px-0 gap-[10px] text-[21px] text-blue" name="Login" />
+          </Link>
+          <Link href={"#"} className=" hidden lg:flex">
+            <Button value="button-custom" name="Enroll Now" />
           </Link>
         </div>
-        {/* responsive three line and close icon */}
-        <div className="lg:hidden">
+
+        {/* Responsive Hamburger Menu */}
+        <div className="md:hidden">
           <Tag />
         </div>
       </div>
-      {/* Mobile Nav */}
-      <div>
+
+      {/* Mobile Nav (visible only on mobile devices) */}
+      <div className="md:hidden w-full">
         <MobileNav />
       </div>
     </header>

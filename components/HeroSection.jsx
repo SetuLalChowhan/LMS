@@ -14,7 +14,7 @@ const HeroSection = () => {
     <section className="py-12">
       <div className="container flex sm:flex-row flex-col gap-28 lg:mt-12 mt-12">
         {/* Left side */}
-        <div className="md:w-full md:h-full  flex flex-col">
+        <div className="md:w-full md:h-full  flex flex-col md:flex-1">
           <div className="lg:text-[18px] font-[600] text-left text-blue">
             Learn with EduHub
           </div>
@@ -68,7 +68,7 @@ const HeroSection = () => {
           </div>
         </div>
         {/* Right side-Image Section */}
-        <div className=" hidden md:inline-block lg:w-[648px] h-[502px] mt-8  ">
+        <div className=" hidden md:inline-block lg:w-[648px] h-[502px] mt-8 md:flex-1  ">
           <div className=" lg:w-[648px] h-[437px] lg:flex-center lg:flex-row flex-col  gap-3  rounded-bl-[4px] ">
             <div className=" md:flex-center">
               <Image
