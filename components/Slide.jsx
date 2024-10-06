@@ -30,13 +30,13 @@ const Slide = ({ cards,tailwindValue ,num,custom_arrow,}) => {
           slidesPerView: 1,
           spaceBetween: 20,
         },
-        750: {
+        760: {
           slidesPerView: 2,
-          spaceBetween: 40,
+          spaceBetween: 20,
         },
-        1400: {
+        1200: {
           slidesPerView: num,
-          spaceBetween: 0,
+          spaceBetween: 40,
         },
       }}
       navigation={false}

@@ -15,7 +15,7 @@ export default function Home() {
       <HomeCourses />
       <Testimonials title={" What Our Learners Are Saying"} para={"Hear from our learners about how EduHub has helped them achieve their goals and advance their careers."} />
       <Seminer />
-      <Instructor title={"Our Specialized Course Instructors"} para={"Our mission is to make high-quality learning from specialized instructors accessible to everyone."} value={"lg:w-[1320px] lg:h-[362px]"} value1={"lg:w-[1340px]"} number={4}  />
+      <Instructor title={"Our Specialized Course Instructors"} para={"Our mission is to make high-quality learning from specialized instructors accessible to everyone."} number={3}  />
       <BlogSection />
     </main>
   );

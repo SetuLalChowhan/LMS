@@ -3,23 +3,16 @@ import Head from "./Head";
 import Slide from "./Slide";
 import InstructorCards from "./InstructorCards";
 
-const Instructor = ({title,para,value,value1 ,number}) => {
-  console.log(number)
+const Instructor = ({ title, para, number }) => {
   return (
-    <section className=" container lg:w-full lg:h-[514px] mt-24  ">
-      {/* //Head Section */}
+    <section className="container lg:max-w-7xl lg:mx-auto mt-24 px-4">
+      {/* Head Section */}
       <div>
-        <Head
-          header={title}
-          details={
-            para
-          }
-        />
+        <Head header={title} details={para} />
       </div>
       {/* Instructor Slide */}
-      <div className={`${value} mt-8 mx-auto`} >
-       
-    <Slide cards={<InstructorCards num={number}/> } tailwindValue={`md:w-[600px] ${value1} w-[300px] rounded-md`}  />
+      <div className="w-full mt-8 mx-auto">
+        <Slide cards={<InstructorCards num={number} />} tailwindValue="sm:w-[320px] md:w-full" />
       </div>
     </section>
   );

@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="container shadow-custom w-full flex flex-col lg:flex-row lg:h-[100px] sticky top-0 z-50 bg-white">
+    <header className="container  w-full flex flex-col lg:flex-row lg:h-[100px] sticky top-0 z-50 bg-white">
       <div className="flex justify-between items-center w-full py-4 lg:py-0">
         {/* Logo */}
         <div className="w-[143px]">

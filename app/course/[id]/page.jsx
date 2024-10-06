@@ -140,7 +140,7 @@ const page = ({ params }) => {
         </div>
       </div>
       <div className=" ">
-      <Instructor title={"Our Expert Instructors For This Course"} para={"Each module covers essential skills from user research to advanced UI design, helping you build a professional portfolio and excel in your UX/UI career."} value={""} value1={"lg:w-[640px]"} number={2} />
+      <Instructor title={"Our Expert Instructors For This Course"} para={"Each module covers essential skills from user research to advanced UI design, helping you build a professional portfolio and excel in your UX/UI career."} value={""} value1={"lg:w-[640px]"} number={3} />
       </div>
       <div>
       <Testimonials title={" Reviews from Students"} para={"Each module covers essential skills from user research to advanced UI design, helping you build a professional portfolio and excel in your UX/UI career."} />

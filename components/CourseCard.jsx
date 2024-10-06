@@ -17,10 +17,10 @@ const CourseCard = ({ value }) => {
   const cards = courseCategory.map((item, index) => (
     <SwiperSlide key={index}>
       <div
-        className={`w-[312px] h-[430px]  border border-gray-300 shadow-2xl  rounded-md flex flex-col gap-2 items-start px-3 py-4 `}
+        className={`w-full h-[430px]  border border-gray-300 shadow-2xl  rounded-md flex flex-col gap-2 items-start px-3 py-4 `}
       >
         <Image
-          className="w-[312px] h-[224px] object-cover"
+          className="w-full h-[224px] object-cover"
           src={item.image}
           width={312}
           height={224}
@@ -50,9 +50,9 @@ const CourseCard = ({ value }) => {
   return (
     <Slide
       cards={cards}
-      num={4}
+      num={3}
      
-      custom_arrow={ courseCategory.length>=5?<SwiperNavButton/>:(<div className={ courseCategory.length===1 ?"hidden":"lg:hidden flex justify-center items-center"}>
+      custom_arrow={ courseCategory.length>=4?<SwiperNavButton/>:(<div className={ courseCategory.length===1 ?"hidden":"lg:hidden flex justify-center items-center"}>
         <SwiperNavButton/>
       </div>)}
     />
