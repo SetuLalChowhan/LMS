@@ -7,10 +7,10 @@ import Card from "./Card";
 
 const AllCourses = () => {
   const { courses } = useSelector((state) => state.lms);
-  const [active, setActive] = useState("All Courses");
+  const [activeCategory, setActiveCategory] = useState("All Courses");
   const dispatch = useDispatch();
 
-  const Cat = [
+  const categories = [
     "All Courses",
     "Programming",
     "Design",
@@ -22,42 +22,40 @@ const AllCourses = () => {
   useEffect(() => {
     dispatch(getCourses("All Courses"));
   }, [dispatch]);
+
   return (
-    <div className=" w-full mt-6">
+    <div className="w-full mt-6 px-4 lg:px-0">
       {/* Category Section */}
-      <div className="lg:flex-center gap-7 grid grid-cols-3 ">
-        {Cat.map((item, index) => {
-          return (
-            <button
-              onClick={() => {
-                setActive(item);
-                dispatch(getCourses(item));
-              }}
-              key={index}
-              className={
-                item == active
-                  ? " lg:w-[300px] lg:text-[17px] font-[500] text-blue "
-                  : "lg:w-[300px] lg:text-[17px] font-[500]  "
-              }
-            >
-              {item}
-            </button>
-          );
-        })}
+      <div className="flex flex-wrap justify-center gap-4 lg:gap-7 mb-6">
+        {categories.map((category, index) => (
+          <button
+            onClick={() => {
+              setActiveCategory(category);
+              dispatch(getCourses(category));
+            }}
+            key={index}
+            className={`${
+              category === activeCategory
+                ? "text-blue font-semibold border-b-2 border-blue"
+                : "text-gray-700"
+            } text-sm lg:text-[17px] px-4 py-2 hover:text-blue transition-all`}
+          >
+            {category}
+          </button>
+        ))}
       </div>
-      {/* All Courses */}
-      <div className="grid lg:grid-cols-4 mt-8 gap-3 place-items-center  md:grid-cols-2">
-        {courses?.map((value, index) => {
+
+      {/* All Courses Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 custom-md:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-center">
+        {courses?.map((course, index) => {
           return index <= 7 ? (
             <Card
               key={index}
-              item={value}
+              item={course}
               height={"h-[430px]"}
               type={"See Details"}
             />
-          ) : (
-            ""
-          );
+          ) : null;
         })}
       </div>
     </div>

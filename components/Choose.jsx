@@ -5,9 +5,9 @@ import Head from "./Head";
 
 const Choose = () => {
   return (
-    <section className=" lg:container lg:w-[1320px] lg:h-[402px] lg:mt-24">
-      {/* //Head Section */}
-      <div className=" lg:w-[700px] lg:h-[112px] lg:mx-auto ">
+    <section className="container mx-auto px-4 lg:px-0 mt-16 lg:mt-24">
+      {/* Head Section */}
+      <div className="text-center mb-8 lg:mb-12">
         <Head
           header={"Why Choose Us?"}
           details={
@@ -15,22 +15,23 @@ const Choose = () => {
           }
         />
       </div>
-      {/* //Card Section */}
-      <div className=" lg:w-[1320px] lg:-ml-4 lg:h-[250px] lg:grid lg:grid-cols-4 gap-6 flex flex-col justify-center items-center mt-4 md:grid md:grid-cols-2 md:place-items-center ">
-        {chooseUs.map((item, index) => {
-          return (
-            <div
-              key={index}
-              className="flex flex-col justify-center items-center w-[312px] h-[250px] bg-[#D9E8FF] px-2 rounded-2xl "
-            >
-              <Image src={item.image} width={60} height={60} alt="logo" />
-              <p className="text-[20px] font-[700]">{item.title}</p>
-              <p className="text-[16px] font-[400] text-[#353537] text-center">
-                {item.details}
-              </p>
-            </div>
-          );
-        })}
+
+      {/* Card Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {chooseUs.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center p-6 bg-[#D9E8FF] rounded-2xl shadow-md transform hover:scale-105 transition-transform duration-300"
+          >
+            <Image src={item.image} width={60} height={60} alt="logo" />
+            <h3 className="text-xl font-bold mt-4 mb-2 text-center">
+              {item.title}
+            </h3>
+            <p className="text-sm md:text-base text-[#353537] text-center">
+              {item.details}
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );
