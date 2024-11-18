@@ -9,10 +9,10 @@
     @apply w-[148px] h-[51px] absolute lg:top-[24px]  lg:py-[12px] lg:px-[28px] gap-[8px] rounded-[7px] text-secondary text-[17px]  bg-[#3687FC] hover:opacity-75 transition-all duration-300;
   }
   .button-custom1 {
-    @apply w-[148px] h-[51px]  rounded-[7px] text-secondary text-[17px]  bg-[#3687FC];
+    @apply w-[148px] h-[51px]   rounded-[7px] text-secondary text-[17px]  bg-[#3687FC];
   }
   .button-custom2 {
-    @apply  px-2 py-2  lg:px-6 lg:py-4 gap-2.5 rounded-[4px] bg-[#3687FC] text-secondary hover:opacity-75 transition-all duration-300;
+    @apply  px-3 py-3  lg:px-6 lg:py-4 gap-2.5 rounded-[4px] bg-[#3687FC] text-secondary hover:opacity-75 transition-all duration-300;
   }
   .button-custom3 {
     @apply  px-2 py-2  lg:px-6 lg:py-4 gap-2.5 rounded-[4px] border-[1.5px]  outline outline-2 outline-[#3687FC] hover:opacity-75 transition-all duration-300;
