@@ -23,7 +23,7 @@ const Module = () => {
   };
 
   return (
-    <div className="container my-6 font-poppins">
+    <section className="container my-6 font-poppins">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {accordionData.map((item, index) => (
           <div key={index} className="border border-gray-200 rounded-md">
@@ -62,7 +62,7 @@ const Module = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

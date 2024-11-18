@@ -5,11 +5,11 @@ import React from 'react'
 
 const Courses = () => {
   return (
-    <div >
+    <section >
       <CourseHeroSection/>
       <CourseCategories/>
       <CourseSection/>
-    </div>
+    </section>
   )
 }
 

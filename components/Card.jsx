@@ -7,7 +7,7 @@ import Image from "next/image";
 const Card = ({ item, height, category, date, type }) => {
   return (
     // Responsive Card for Blog and Course card, optimized for small to large screens
-    <div
+    <section
       className={` md:w-[260px] lg:w-[312px] ${height} border border-gray-300 shadow-lg px-4 py-6 rounded-lg flex flex-col gap-4 items-start transition-all hover:shadow-2xl bg-white`}
     >
       {/* Responsive Image */}
@@ -53,7 +53,7 @@ const Card = ({ item, height, category, date, type }) => {
           }
         />
       </Link>
-    </div>
+    </section>
   );
 };
 

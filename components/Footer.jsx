@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <section className="  w-full lg:h-[458px] bg-[#0055D2] inline-block text-white mt-24">
+    <footer className="  w-full lg:h-[458px] bg-[#0055D2] inline-block text-white mt-24">
       <div className=" container mt-20 lg:flex lg:flex-row flex-col lg:gap-0 gap-4 lg:w-[1233px] lg:h-[284px] md:grid md:grid-cols-2 lg:justify-between">
         {/* stage1 */}
         <div className="w-[329px] h-[284px]">
@@ -162,7 +162,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

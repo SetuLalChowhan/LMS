@@ -24,7 +24,7 @@ const AllCourses = () => {
   }, [dispatch]);
 
   return (
-    <div className="w-full mt-6 px-4 lg:px-0">
+    <section className="w-full mt-6 px-4 lg:px-0">
       {/* Category Section */}
       <div className="flex flex-wrap justify-center gap-4 lg:gap-7 mb-6">
         {categories.map((category, index) => (
@@ -58,7 +58,7 @@ const AllCourses = () => {
           ) : null;
         })}
       </div>
-    </div>
+    </section>
   );
 };
 
